@@ -42,14 +42,16 @@ const navigate = useNavigate()
               questionBody,
               questionTags,
               userPosted: User.result.name,
-              // userId:User?.result?._id
+              userId:User?.result?._id
+            // remember this very clearly , using userid is most important now think why .. you have doenalsready mistake so 
+               
             },
             navigate
             )
             );
           } else alert("Please enter all the fields");
-        } else alert("Login to ask question");
-        navigate('/Auth')
+        } else alert("Please go to Login and get Register or Log In Yourself for performing activities in tis website!");
+        // navigate('/Auth')
       };
 
   const handleEnter=(e)=>{
