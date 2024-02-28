@@ -1,0 +1,48 @@
+.aboutthing{
+    margin: 0%;
+    padding-top: 5%;
+    background-color: white;
+    border: solid 1px #e3e6e8;
+    font-size: 18px;
+    align-items: center;
+    align-content: center;
+  text-decoration: solid;
+
+  }
+
+  .portfolio{
+    position: absolute;
+    top:50%;
+    background-color:#050506;
+    color: #2e2b2b;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+    text-decoration: none;
+    align-content: center;
+    text-decoration-line: none;
+    align-items: center;
+    
+  } 
+
+  .portfolio:active{
+    background-color: #ffbf00;
+    text-decoration: none;
+  }
+
+  .portfolio:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #454346;
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+.portfolio:hover {
+  background-color:#5b5c5e;
+  transition: 0.7s;
+  text-decoration: none;
+}
+
