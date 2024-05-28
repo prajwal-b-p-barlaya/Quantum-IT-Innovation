@@ -82,7 +82,7 @@ const QuestionsDetails = () => {
   const dispatch=useDispatch()
 const User= useSelector((state)=>(state.currentUserReducer))
 const location=useLocation()
-const url='https://stack-overflow-prajwal-2.onrender.com'
+const url='https://stackoverflow-nulclass-prajwalbarlaya.netlify.app/'
 
 const handlePostAns=(e,answerLength)=>{
     e.preventDefault()

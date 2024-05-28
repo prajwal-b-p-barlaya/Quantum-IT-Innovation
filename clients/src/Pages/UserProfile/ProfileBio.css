@@ -1,0 +1,43 @@
+/* table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  h4 {
+    margin: 0 0 10px;
+  }
+  
+  p {
+    margin: 0 0 5px;
+  }
+   */
+
+   .profile-bio {
+    margin-top: 20px;
+  }
+  
+  .profile-bio-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .profile-bio-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .tag {
+    background-color: #e1ecf4;
+    color: #39739d;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-right: 5px;
+    display: inline-block;
+  }
+  

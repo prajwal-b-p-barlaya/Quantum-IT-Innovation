@@ -4,9 +4,9 @@ import comment from "../assets/comment-alt-solid.svg";
 import pen from "../assets/pen-solid.svg";
 import blackLogo from "../assets/blacklogo.svg";
 
-const Widget = () => {
+const Widget = ({ slideIn, handleSlideIn }) => {
   return (
-    <div className="widget">
+    <div className="widget" slideIn={slideIn} handleSlideIn={handleSlideIn} >
       <h4>The Overflow Blog</h4>
       <div className="right-sidebar-div-1">
         <div className="right-sidebar-div-2">

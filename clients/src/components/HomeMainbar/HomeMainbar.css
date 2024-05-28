@@ -4,6 +4,16 @@
     margin: 25px 0px;
     padding-top: 2%;
   }
+
+  .topp{
+    padding-top:10%;
+    text-decoration: solid;
+    text-transform: capitalize;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    font-size: large;
+  }
   
   .main-bar-header {
     display: flex;

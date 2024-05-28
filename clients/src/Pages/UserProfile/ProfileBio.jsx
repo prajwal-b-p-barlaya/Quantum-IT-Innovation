@@ -1,48 +1,83 @@
-import React from 'react'
+// import React from 'react';
+// import './ProfileBio.css';
 
-const ProfileBio = ({currentProfile}) => {
+// const ProfileBio = ({ currentProfile }) => {
+//   return (
+//     <div className="profile-bio">
+//       <table className="profile-bio-table">
+//         <tbody>
+//           <tr>
+//             <td><strong>Tags Interested</strong></td>
+//             <td>
+//               {currentProfile?.tags.length !== 0 ? (
+//                 currentProfile?.tags.map((tag) => <span key={tag} className="tag">{tag}</span>)
+//               ) : (
+//                 <span>0 Tags watched</span>
+//               )}
+//             </td>
+//           </tr>
+//           <tr>
+//             <td><strong>About</strong></td>
+//             <td>
+//               {currentProfile?.about ? (
+//                 <span>{currentProfile?.about}</span>
+//               ) : (
+//                 <span>No Bio Found</span>
+//               )}
+//             </td>
+//           </tr>
+//         </tbody>
+//       </table>
+//     </div>
+//   );
+// };
+
+// export default ProfileBio;
+
+
+import React from 'react';
+import './ProfileBio.css';
+import moment from 'moment';
+
+const ProfileBio = ({ currentProfile }) => {
   return (
-    <div>
-<div>
-        {
-
-            currentProfile?.tags.length !== 0 ? (
-                <>
-                <h4>
-                    Tags Interested
-                </h4>
-                {
-                currentProfile?.tags.map((tag)=>(
-                <p key={tag}>{tag}</p>
-                ))
-                
-                }
-                </>
-            ):(
-                <p>
-                    0 Tags watched
-                </p>
-            )
-        }
-        </div>
-        <div>
-            {
-                currentProfile?.about ?(
-                    <>
-                    <h4>
-About
-                    </h4>
-                    <p>
-{currentProfile?.about}
-                    </p>
-                    </>
-                ):(
-                    <p>No Bio Found</p>
-                )
-            }
-        </div>
+    <div className="profile-bio">
+      <table className="profile-bio-table">
+        <tbody>
+          <tr>
+            <td><strong>Tags Interested</strong></td>
+            <td>
+              {currentProfile?.tags.length !== 0 ? (
+                currentProfile?.tags.map((tag) => <span key={tag} className="tag">{tag}</span>)
+              ) : (
+                <span>0 Tags watched</span>
+              )}
+            </td>
+          </tr>
+          <tr>
+            <td><strong>About</strong></td>
+            <td>
+              {currentProfile?.about ? (
+                <span>{currentProfile?.about}</span>
+              ) : (
+                <span>No Bio Found</span>
+              )}
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Joined</strong></td>
+            <td>
+              {currentProfile?.joinedOn ? (
+                <span>{moment(currentProfile?.joinedOn).format('MMMM Do, YYYY')}</span>
+              ) : (
+                <span>No Join Date Found</span>
+              )}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  )
-}
+  );
+};
 
-export default ProfileBio
+export default ProfileBio;

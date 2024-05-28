@@ -8,7 +8,7 @@ const About = () => {
   return (
 
     <div className="aboutthing" style={{alignItems:"center",textAlign:"center"}}>
-    <><div >:The page contains the information of the developer who have developed this website with help of tutorial of NULLCLASS Training:</div>
+    <><div >:The page contains the information of the developer who have developed this website </div>
     <div className="namemy">
           <p>PRAJWAL BARLAYA</p>
       </div>

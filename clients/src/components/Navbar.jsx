@@ -1,7 +1,5 @@
 import React,{useEffect} from 'react'
 import {Link,useNavigate} from 'react-router-dom'
-import logo from '../components/assets/logo.png'
-import search from '../components/assets/search.svg'
 import Avatar from '../components/Avatar/Avatar'
 import '../components/Navbar.css'
 import {useSelector,useDispatch} from 'react-redux'
@@ -44,37 +42,10 @@ if(token){
           <img src={bars} alt="bars" width="15" />
         </button>
 
-        <div className="navbar-1">
-       <Link to='/' className='nav-item nav-logo'>
-        <img src={logo} alt='logo' width="180px" style={{paddingRight:"100px"}}/>
-        {/* <img src="clients/logo.png"></img> */}
-
-       
-       </Link>
-
-
-
-       <Link to='/About' className='nav-item nav-btn res-nav' style={{paddingLeft:"500px",textDecoration:"bold",color:"black"}} >ABOUT </Link>
-       <Link to='/' className='nav-item nav-btn res-nav' style={{paddingLeft:"5px"}}>Products</Link>
-       <Link to='/' className='nav-item nav-btn res-nav'style={{paddingLeft:"5px"}}>For Teams</Link>
-       <form>
-        <input type="text" placeholder='       Search Here...' style={{paddingLeft:"5px"}}width="20px"/>
-        <img src={search} alt='search' width="18" className="search-icon" />
-       </form>
-       </div>
-
-
-
-
-       
-       {/* these parts are updated in order to make it resposnive  */}
-
-
-       
-
-       <div className="navbar-2">
+      
+       <div className="navbar-1">
 { User === null ? 
-<Link to='/Auth' className='nav-item nav-links'>Log In
+<Link to='/Auth' className='nav-item nav-links'>&nbsp;&nbsp;Log In / SignUp
 
 </Link>:
 
@@ -85,6 +56,9 @@ if(token){
 </>
   }
 
+</div>
+<div className='navbar-2'>
+<Link to='/' />
 </div>
     </div>
     </nav>
