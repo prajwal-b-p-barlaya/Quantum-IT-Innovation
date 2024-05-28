@@ -62,7 +62,8 @@ const UsersList = () => {
   Action & Status
               <br>
               </br>
-            <p style={{color:'red'}}> Dear Recruiter, The EDIT section  = (Those who have loggedIn they can go thier profile and edit the details )=
+            <p style={{color:'red'}}> Dear Recruiter, The EDIT section <br>
+            </br> = (Those who have loggedIn they can go thier profile and edit the details )=
         The ACTION which you told to make it as active or not active , I could not complete due to lack of time as I had an exam today morning at college and I have done changes such that only THE PERSON WHO HAS LOGGED IN or STATUS AS ACTIVE Can Only EDIT his profile.
         </p> 
             </th>
